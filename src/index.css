@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  /* color: rgba(80, 46, 9, 1); */
+}
+
+
+.heading{
+  font-size: 48px;
+  font-family: 'Beverly';
+    color: rgba(80, 46, 9, 1);
+   font-weight: normal;
+
+}
+
+.text{
+  font-family: 'Poppins';
+  font-size: 15px;
+    color: rgba(80, 46, 9, 1);
+   font-weight: normal;
+
+}
+
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-Medium.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Beverly";
+  src: url("./assets/fonts/Beverly.ttf") format("truetype");
+  font-weight: 400;
+}
+

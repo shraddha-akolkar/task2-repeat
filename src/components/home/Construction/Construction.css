@@ -1,0 +1,166 @@
+
+.construction-section {
+  padding: 50px;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  min-height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.construction-header {
+  margin-bottom: 20px;
+}
+
+.tag {
+  color: rgba(150, 104, 46, 1);
+  font-size: 23px;
+  font-family: 'Beverly';
+
+  /* margin-bottom: 8px; */
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 48px;
+  color: rgba(80, 46, 9, 1);
+  font-weight: normal;
+  padding-bottom: 20px;
+}
+
+
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 55%;
+}
+
+
+.video-card {
+  position: relative;
+  width: 755px;
+  align-items: flex-start;
+
+  aspect-ratio: 18 / 9;   
+   border: 4px solid transparent;   
+  border-radius: 15px;
+border-top: 0;
+  background: 
+    linear-gradient(#fff, #fff) padding-box, 
+    linear-gradient(180deg, #502E09 0%, #96682E 100%) border-box;
+}
+
+
+.video-inner {
+  width: 95%;
+  height: 100%;
+
+  margin-left: 15px;    
+  margin-top: -38px;     
+
+  border-radius: 12px;
+  overflow: hidden;
+
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.video-inner img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 15px;
+cursor: pointer;
+  object-fit: cover;
+  object-position: 30% 30%;  
+}
+
+
+
+@media (max-width: 1024px) {
+
+  .construction-section {
+    padding: 40px 15px;   /* ✅ tablet spacing */
+  }
+
+  .title {
+    font-size: 38px;
+  }
+
+  .tag {
+    font-size: 20px;
+  }
+
+  .video-wrapper {
+    width: 100%;
+  }
+
+  .video-card {
+    width: 100%;
+  }
+
+  .video-inner {
+    margin-left: 0;       /* ✅ center properly */
+    margin-top: -20px;    /* slight overlap 유지 */
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .construction-section {
+    padding: 40px 15px;   /* ✅ same as requirement */
+  }
+
+  .construction-header{
+    margin-bottom: 5px;
+  }
+
+  .title {
+    font-size: 22px;
+     padding-bottom: 0; 
+  }
+
+  .tag {
+    font-size: 16px;
+  }
+
+  .video-wrapper {
+    width: 100%;
+  }
+
+  .video-card {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .video-inner {
+    width: 100%;
+    margin: 0; 
+               /* ✅ remove offset */
+    border-radius: 10px;
+  }
+
+  .video-inner img {
+    border-radius: 10px;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .construction-section {
+    padding: 40px 15px;
+  }
+
+  .title {
+    font-size: 20px !important;
+  }
+
+  .tag {
+    font-size: 15px;
+  }
+}
