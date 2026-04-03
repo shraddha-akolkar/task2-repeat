@@ -269,6 +269,7 @@ position: relative;
   .icons-row {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
+    /* display: flex; */
   }
 
   .icon-item {
