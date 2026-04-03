@@ -49,7 +49,6 @@ const Slider = () => {
         </SwiperSlide>
       </Swiper>
 
-      {/* Custom Arrows */}
       <div className="custom-prev" ref={prevRef}>
         <ArrowIcon />
       </div>

@@ -252,23 +252,23 @@ position: relative;
 @media (max-width: 768px) {
 
   .highlights-container {
-    padding: 40px 15px;   /* ✅ your requirement */
+    padding: 40px 15px;  
   }
 
   .highlights-left {
     padding-left: 0;
-    align-items: center;   /* ✅ center content */
+    align-items: center;  
     text-align: center;
   }
 
   .highlights-content {
     flex-direction: column;
-    align-items: center;   /* ✅ center whole layout */
+    align-items: center;  
   }
 
   .icons-row {
     grid-template-columns: repeat(2, 1fr);
-    justify-items: center; /* ✅ center grid items */
+    justify-items: center;
   }
 
   .icon-item {

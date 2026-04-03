@@ -1,6 +1,6 @@
 .project-section {
   background-color: #f5efe6;
-  padding: 60px 60px 80px;
+  padding: 60px 60px 40px;
   box-sizing: border-box;
   overflow: hidden;
   display: flex;
@@ -10,8 +10,9 @@
 .project-header {
   position: relative;
   margin-bottom: 0px;
-  padding-left: 20px;
+  padding-left: 40px;
   width: 100%;
+    margin-top: 40px; 
 }
 
 .project-eyebrow {
@@ -29,15 +30,17 @@
   margin: 0;
   position: relative;
   display: inline-block;
+  word-spacing: 20px;
+
 }
 
 .project-header::before {
   content: '';
   position: absolute;
-  left: 0;
+  left: -20px;
   top: 50px;
 
-  width: 15px;
+  width: 55px;
   height: 233px;
 
   border-left: 2px solid rgba(150, 104, 46, 1);
@@ -51,8 +54,8 @@
   content: '';
   position: absolute;
 
-  left: calc(100% + 12px);
-  top: 50%;
+  left:400px;
+  top: 55%;
 
   width: 670px; 
   height: 40px;
@@ -67,7 +70,9 @@
   gap: 20px;
   position: relative;
   padding-right: 44px;
-  margin-top: 0px;
+    margin-top: 40px; 
+
+  margin-bottom: 0;
 }
 
 
@@ -166,7 +171,7 @@
 .text p {
   color: #5C3811;
   font-family: 'Poppins';
-  font-size: 14px;
+  font-size: 12px;
   margin: 0;
 }
 
@@ -192,7 +197,6 @@
 
 
 
-/* ================= REMOVE LINES (TABLET + MOBILE) ================= */
 @media (max-width: 1024px) {
   .project-header::before,
   .project-title::after,
@@ -202,11 +206,10 @@
   }
 }
 
-/* ================= TABLET ================= */
 @media (max-width: 1024px) {
 
   .project-section {
-    padding: 40px 20px 60px; /* less side space */
+    padding: 40px 20px 60px;
   }
 
   .project-header {
@@ -221,15 +224,14 @@
     font-size: 18px;
   }
 
-  /* 🔥 GRID + CENTER FIX */
   .layout-cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
 
     width: 100%;
-    max-width: 700px;   /* controls layout width */
-    margin: 20px auto 0; /* center */
+    max-width: 700px;  
+    margin: 20px auto 0; 
     padding-right: 0;
   }
 
@@ -239,11 +241,13 @@
   }
 }
 
-/* ================= MOBILE ================= */
 @media (max-width: 768px) {
+.project-header{
+    margin-top: 0; 
 
+}
   .project-section {
-    padding: 30px 15px 50px;
+    padding: 40px 15px;
   }
 
   .project-title {
@@ -255,14 +259,14 @@
   }
 
   .layout-cards {
-    grid-template-columns: 1fr; /* 🔥 1 column */
-    gap: 16px;
-    max-width: 100%;
+    grid-template-columns: 1fr; 
+    gap: 36px;
+    max-width: 70%;
     margin: 20px auto 0;
   }
 
   .layout-card {
-    width: 100%;   /* 🔥 FIX overflow */
+    width: 100%; 
     height: 200px;
   }
 
@@ -273,10 +277,11 @@
 
   .text span,
   .text p {
-    font-size: 12px;
+    font-size: 15px;
+    text-align: left;
   }
 
   .size-box {
-    font-size: 10px;
+    font-size: 13px;
   }
 }

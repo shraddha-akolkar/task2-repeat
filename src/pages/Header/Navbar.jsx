@@ -29,7 +29,7 @@ const Navbar = () => {
           </div>
 
           <div className={`bottom ${menuOpen ? "open" : ""}`}>
-            <ul className="nav-menu">
+            <ul className={`nav-menu ${menuOpen ? "active" : ""}`}>
               <li>PROJECT OVERVIEW</li>
               <li>PROJECT GALLERY</li>
               <li>CONFIGURATIONS</li>

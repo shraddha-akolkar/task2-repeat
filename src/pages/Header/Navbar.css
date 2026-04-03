@@ -16,8 +16,9 @@ body{
   text-align: right;
   font-size: 13px;
   letter-spacing: 1px;
-  padding: 8px 120px;
+  padding: 8px 80px;
   color: #7a5a3a;
+  word-spacing: 5px;
   /* background: #f8f5f2; */
 }
 
@@ -27,11 +28,10 @@ body{
 
 .bottom {
   background: #f8f5f2;
-  width: 100%;         
+  width: 100%;
   display: flex;
-  justify-content: center;
-
-  /* padding-bottom: 10px;  */
+  justify-content: flex-end;   
+  padding-right: 70px; 
 }
 
 .nav-main-wrapper {
@@ -42,6 +42,7 @@ body{
   margin-top: 0px;
   margin-bottom: 0;
   margin-right: 10px;
+  padding-left: -40px;
 }
 
 .logo-box {
@@ -55,16 +56,16 @@ body{
 .logo-box img {
   height: 80px;
   margin-top: -10px;
-  margin-left: 170px;
+  margin-left: 130px;
 }
-
 .nav-menu {
   display: flex;
+  justify-content: flex-end; 
   gap: 40px;
   list-style: none;
-  padding: 16px 90px;
-  background: linear-gradient(90deg, #7C4200 0%, #5C3811 100%);
-
+  width: 100%; 
+  padding: 16px 10px; 
+  background: rgba(92, 56, 17, 1);
   border-radius: 0 0 20px 20px;
   color: white;
   font-size: 14px;
@@ -72,8 +73,10 @@ body{
   margin: 0;
 }
 
+
 .nav-menu li {
   cursor: pointer;
+  text-align: right;
   transition: 0.3s;
 }
 
@@ -116,21 +119,41 @@ body{
 @media (max-width: 1024px) {
 
   .top-info-strip {
-    padding: 8px 40px;
-    font-size: 12px;
+    display: none;
+  }
+
+  .bottom {
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+
+  .nav-main-wrapper {
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+  }
+
+  .logo-box {
+    position: static;
+    left: 0;
   }
 
   .logo-box img {
-    margin-left: 60px;  
-    height: 70px;
+    margin: 0;
+    height: 60px;
   }
 
   .nav-menu {
-    gap: 20px;
-    padding: 14px 40px;
-    font-size: 13px;
+    gap: 25px;
+    padding: 14px 20px;
   }
 }
+
+
+
+
+
+
 
 
 @media (max-width: 768px) {
@@ -174,8 +197,8 @@ body{
     top: 100%;
     left: 0;
     width: 100%;
-    background: #7b3f00;
-
+    background: rgba(92, 56, 17, 1);
+    display: block;
     max-height: 0;
     overflow: hidden;
     transition: all 0.4s ease;
@@ -191,20 +214,15 @@ body{
     padding: 20px;
     text-align: center;
     border-radius: 0;
+    display: none;
+  }
+
+  .nav-menu.active {
+    display: flex;
   }
 
   .nav-menu li {
     padding: 10px 0;
-  }
-}
-
-@media (max-width: 480px) {
-
-  .logo-box img {
-    height: 45px;
-  }
-
-  .nav-menu {
-    font-size: 12px;
+    text-align: center;
   }
 }

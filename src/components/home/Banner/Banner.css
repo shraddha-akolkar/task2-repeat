@@ -12,6 +12,7 @@
   background-size: cover;
   background-position: center;
   overflow: hidden;
+
 }
 
 
@@ -66,14 +67,14 @@
   }
 
   .banner-container {
-    justify-content: center; /* center content */
+    justify-content: center; 
     align-items: center;
     padding: 40px 20px;
     text-align: center;
   }
 
   .banner-content {
-    align-items: center; /* center content */
+    align-items: center; 
   }
 }
 
@@ -81,8 +82,9 @@
 @media (max-width: 767px) {
 
   .banner-container {
-    height: auto; /* prevent overflow issue */
+    height: auto;
     padding: 30px 15px;
+    margin-top: 80px;
   }
 
   .banner-content img {

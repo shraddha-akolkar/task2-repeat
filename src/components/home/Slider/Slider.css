@@ -1,7 +1,7 @@
 .hero-container {
   width: 100%;
   height: 100vh;
-  position: relative; /* 🔥 IMPORTANT */
+  position: relative;
 }
 
 .hero-swiper {
@@ -22,7 +22,6 @@
   object-fit: cover;
 }
 
-/* Arrows */
 .custom-prev,
 .custom-next {
   position: absolute;
@@ -44,7 +43,6 @@
   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
-/* positions */
 .custom-prev {
   left: 20px;
 }
@@ -53,20 +51,17 @@
   right: 20px;
 }
 
-/* rotate left arrow */
 .custom-prev svg {
   transform: rotate(180deg);
 }
 
-/* icon style */
 .custom-prev svg,
 .custom-next svg {
   width: 30px;
   height: 30px;
-  color: #8b5e34; /* 🔥 visible color */
+  color: #8b5e34; 
 }
 
-/* hover effect */
 .custom-prev:hover,
 .custom-next:hover {
   transform: translateY(-50%) scale(1.1);
@@ -99,10 +94,9 @@
 
   .hero-container,
   .slide {
-    height: 70vh; /* 🔥 better for mobile */
+    height: 70vh; 
   }
 
-  /* arrows smaller */
   .custom-prev,
   .custom-next {
     width: 35px;
@@ -115,7 +109,6 @@
     height: 20px;
   }
 
-  /* adjust positions */
   .custom-prev {
     left: 10px;
   }
@@ -130,7 +123,7 @@
 
   .hero-container,
   .slide {
-    height: 60vh; /* compact */
+    height: 60vh; 
   }
 
   .custom-prev,

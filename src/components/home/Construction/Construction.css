@@ -83,7 +83,7 @@ cursor: pointer;
 @media (max-width: 1024px) {
 
   .construction-section {
-    padding: 40px 15px;   /* ✅ tablet spacing */
+    padding: 40px 15px; 
   }
 
   .title {
@@ -103,8 +103,8 @@ cursor: pointer;
   }
 
   .video-inner {
-    margin-left: 0;       /* ✅ center properly */
-    margin-top: -20px;    /* slight overlap 유지 */
+    margin-left: 0;      
+    margin-top: -20px;    
   }
 }
 
@@ -112,7 +112,7 @@ cursor: pointer;
 @media (max-width: 768px) {
 
   .construction-section {
-    padding: 40px 15px;   /* ✅ same as requirement */
+    padding: 40px 15px; 
   }
 
   .construction-header{
@@ -140,7 +140,7 @@ cursor: pointer;
   .video-inner {
     width: 100%;
     margin: 0; 
-               /* ✅ remove offset */
+           
     border-radius: 10px;
   }
 

@@ -181,11 +181,11 @@ form select {
     font-size: 12px;
     /* gap: 8px; */
      display: flex;
-    align-items: flex-start;   /* ✅ align top */
+    align-items: flex-start; 
     justify-content: flex-start;
     gap: 8px;
 
-    text-align: left;          /* ✅ left align text */
+    text-align: left;       
     flex-wrap: nowrap;  
   }
 
